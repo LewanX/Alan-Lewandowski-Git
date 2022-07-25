@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+
+*{
+    font-family: 'League Gothic', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+    
+}
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    background-color: #330102;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2373030F' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23DCDCDC'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.stylework{
+    margin: auto;
+}
+
+ /*GRILLA INDEX*/
+ .container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    "header"
+    "imagen"
+    "sectionA"
+    "sectionB"
+    "footer"
+   
+    ;
+}
+.stylework img{
+    width: 25rem;
+    height: 25rem;
+
+}
+/*GRILLA TRABAJOS*/
+.containergaleria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "header header header header"
+    "imagenwork imagenwork imagenwork imagenwork"
+    "work1 work2 work3 work4"
+    "work5 work6 work7 work8"
+    "footer footer footer footer"
+   
+    ;
+  
+}
+/*GRILLA SERVICIOS*/
+.containerservicio{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "imagenservicio imagenservicio"
+    "sectionA_service sectionC_service"
+    "sectionB_service sectionC_service"
+    "footer footer"
+    ;
+}
+    .sectionC_service{
+        margin: 1%;
+    }
+
+    /*GRILLA nosotros*/
+.containernosotros{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "imagennosotros"
+    "main_nosotros"
+    "footer"
+    ;
+}
+/*GRILLA CONTACTO*/
+.containercontacto{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "imagencontacto"
+    "main_contact"
+    "footer"
+    ;
+}
+
+
+
+
+/*////////////GRIDS PARA PAGINA TRABAJOS.HTML//////////////*/
+.work1{
+    grid-area: work1;
+}
+.work2{
+    grid-area: work2;
+}
+.work3{
+    grid-area: work3;
+}
+.work4{
+    grid-area: work4;
+}
+.work5{
+    grid-area: work5;
+}
+.work6{
+    grid-area: work6;
+}
+.work7{
+    grid-area: work7;
+}
+.work8{
+    grid-area: work8;
+}
+
+
+
+/*////////////CABECERA//////////////*/
+header{
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between; 
+    background-color: black;
+    color: white;
+    height: 16rem;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 0.005rem 2rem red;
+    z-index: 2;
+}
+.image_logo{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+.logo{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    
+}
+.menu{
+    background-color: red;
+    border-radius:2rem 0 0 2rem;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul a{
+    text-decoration: none;  
+    font-size:1.5rem;
+    color: white;
+    
+    text-transform: uppercase;  
+    text-align: center;
+    width: 100px;
+}
+
+
+/*////////////IMAGENES PRINCIPALES//////////////*/
+.main_image.index{
+    grid-area: imagen;
+    background-image: url('../images/imagen-principal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    box-shadow: 0px 1rem 5rem;
+    text-align: center;
+    font-size: 4rem;
+
+
+}
+
+.main_image.work{
+    grid-area: imagenwork;
+    background-image: url('../images/trabajos/imagen-principal-trabajo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    box-shadow: 0px 1rem 5rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1%;
+}
+
+.main_image.service{
+    grid-area: imagenservicio;
+    background-image: url('../images/servicio/imagen-principal-servicio.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    box-shadow: 0px 1rem 5rem;
+    text-align: center;
+    font-size: 4rem;
+}
+.main_image.about{
+    grid-area: imagennosotros;
+    background-image: url('../images/nosotros/imagen-principal-nosotros.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    box-shadow: 0px 1rem 5rem;
+    text-align: center;
+    font-size: 4rem;
+}
+.main_image.contact{
+    grid-area: imagencontacto;
+    background-image: url('../images/contactanos/imagen-principal-contactanos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    box-shadow: 0px 1rem 5rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/*////////////CONTENEDORES CONTACTO//////////////*/
+.main_contact{
+    grid-area: main_contact;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px black;
+    border-radius: 2rem;
+    width:90rem;
+    margin: auto ;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+}
+
+.form{
+
+    width: 45rem;
+   padding: 1rem;
+  
+  
+   
+}
+.form_container{
+display: flex;
+flex-direction: column;
+margin: 20px;
+text-align: center;
+}
+.form_input{  
+    margin-top: 20px;
+    padding: 10px;
+}
+.form_cta{
+    background-color:red;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.locate{
+margin: auto;
+}
+
+
+
+
+/*////////////CONTENEDORES NOSOTROS//////////////*/
+.main_about{
+    grid-area: main_nosotros;
+}
+.sectionA_about{
+    margin: 1% 10%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.sectionB_about{
+    margin: 1% 10%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.sectionC_about{
+    margin: 1% 10%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.main_about section h2{
+    color: white;
+    margin: 1% 0;
+    font-size: 3rem;
+    text-align: center;
+    background-color: #ff0000;
+    
+}
+.main_about section p{
+    margin: 1% 5%;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+/*////////////CONTENEDORES SERVICIOS//////////////*/
+
+.sectionA_service{
+    grid-area: sectionA_service;
+    margin: 1% 10%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    font-size: 2rem;
+}
+.sectionB_service{
+    grid-area: sectionB_service;
+    margin: 1% 10%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    font-size: 2rem;
+}
+.sectionC_service{
+    grid-area: sectionC_service;
+
+}
+.sectionA_service h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.sectionB_service h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+/*////////////CONTENEDORES INDEX//////////////*/
+.sectionA{
+    grid-area: sectionA;
+    margin: 1% 10%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.sectionB{ 
+    grid-area: sectionB;
+    margin: 1% 10%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    
+}
+.sectionA h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.sectionB h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.image_info_left{
+    font-size: 2rem;
+    display: flex;
+    margin: 0.5rem;
+}
+
+.image_info_right{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0.5rem;
+}
+.main_info p{
+    margin:1rem;
+}
+/*////////////FOOTER//////////////*/
+footer{
+    grid-area: footer;
+    width:100%;
+    height:10rem; 
+}
+.end_page{
+    color: white;
+    background-color: rgb(28, 28, 28);
+    
+    
+   
+}
+.rights_reserved{
+    background-color: black;
+    padding: 10px;
+    
+}
+.image_logo_footer{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+
+}
+.columns{
+    display: flex;
+    justify-content: center;
+    
+    /* faltan links redes sociales /imgs*/
+}
+
+
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:767px) {
+    .sectionC_service{
+        display: none;
+     }
+    .containerservicio{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "imagenservicio "
+        "sectionA_service "
+        "sectionB_service "
+        "footer"
+        ;
+    }
+    
+    .containergaleria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "header header "
+        "imagenwork imagenwork"
+        "work1 work2 "
+        "work3 work4"
+        "work5 work6 "
+        "work7 work8"
+        "footer footer"
+       
+        ;
+    
+    }
+    .containercontacto{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "imagencontacto"
+        "main_contact"
+        "footer"
+        ;
+    }
+    .locate{
+        display: none;
+        
+    }
+    .main_contact{
+        width: 80%;
+    }
+    .form{
+        margin: auto;
+        width: 80%;
+    }
+    .form_input .form_cta{
+        width: 100%;
+        
+    }
+   
+
+
+
+    .stylework img{
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .menu ul{
+        display: block;
+        padding: 2rem;
+    }
+    .menu ul li{
+        padding-bottom: 1rem;
+    }
+   header{
+    height: 20rem;
+    
+   }
+    .sectionA h2{
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    .image_info_left{
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+        align-items: center;
+    }
+    .image_info_right{
+        text-align: center;
+        font-size: 2rem;
+        display:block
+        
+    }
+
+
+}
+/* vista entre desktop y mobile //tablets */
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    .containerservicio{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "imagenservicio imagenservicio"
+        "sectionA_service sectionC_service"
+        "sectionB_service sectionC_service"
+        "footer footer"
+        ;
+    }
+    .sectionC_service{
+        margin: auto;
+    }
+    .containergaleria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "header header "
+        "imagenwork imagenwork "
+        "work1 work2 "
+        "work3 work4"
+        "work5 work6 "
+        "work7 work8"
+        "footer footer"
+       
+        ;
+    
+    }
+    .containercontacto{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "imagencontacto"
+        "main_contact"
+        "footer"
+        ;
+    }
+    .locate{
+        display: none;
+        
+    }
+    .form{
+        margin: auto;
+        width: 80%;
+    }
+    .form_input .form_cta{
+        width: 100%;
+        
+    }
+    .main_contact{
+        width: 80%;
+    }
+
+
+
+    .sectionA{
+        margin: 1% 10%;
+    }
+    .sectionB{
+        margin: 1% 10%;
+    }
+    .stylework img{
+        width: 30rem;
+        height: 30rem;
+    }
+   
+    .image_info{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+    
+    
+}
