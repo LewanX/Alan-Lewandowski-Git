@@ -155,6 +155,7 @@ header{
 }
 .menu ul{
     display: flex;
+    align-items: center;
 }
 .menu ul a{
     text-decoration: none;  
@@ -164,6 +165,10 @@ header{
     text-transform: uppercase;  
     text-align: center;
     width: 100px;
+    transition: all ease-in-out 300ms;/*suavizar animacion*/
+}
+.menu ul a:hover{
+    font-size: 2rem;
 }
 
 
@@ -417,11 +422,13 @@ footer{
     
 }
 .image_logo_footer{
+    
     height: 50px;
     width: 50px;
     margin: 20px;
 
 }
+
 .columns{
     display: flex;
     justify-content: center;
